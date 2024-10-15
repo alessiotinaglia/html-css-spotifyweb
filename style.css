@@ -69,12 +69,24 @@ main{
     cursor: pointer;   
 }
 
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar ul li{
+    padding: 10px 15px;
+    position: relative;
+    cursor: pointer;
+    color: var(--color-lightgrey);
+}
+
+
 /* sidebar */
 
 #sidebar{
     flex: 0 0 230px;
     background-color: var(--color-black);
-    
 }
 
 /* utility flex */
@@ -89,6 +101,10 @@ main{
 
 .a-center{
     align-items: center;
+}
+
+.j-content{
+    justify-content: center;
 }
 
 /* playbar */
