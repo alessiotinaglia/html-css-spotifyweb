@@ -247,11 +247,11 @@
         </section>
         </main>
         <footer class="debug">
-            <div class="d-flex container-left a-center debug">
-                <div class="d-flex debug">
+            <div class="d-flex container-left a-center j-content">
+                <div class="d-flex">
                     <div class="img-footer"><img src="./img/sinister.jpeg" alt="sinister footer"></div>
                 </div>
-                <div class="d-flex f-column margin-20 debug">
+                <div class="d-flex f-column margin-20">
                     <span><strong>Sinister</strong></span>
                     <span id="d-flex" class="font-small">Brano Nome</span>
                 </div>
@@ -260,22 +260,46 @@
                     <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
-                <div class="conteiner-center d-flex debug">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>                
-
+            <div>
+            <div class="conteiner-center">
+                <div>
+                    <ul class="d-flex icon-center a-center j-center">
+                        <li><i class="fa-solid fa-shuffle"></i></li>
+                        <li><i class="fa-solid fa-backward-step"></i></li>
+                        <li class="play"><i class="fa-regular fa-circle-play"></i></li>
+                        <li><i class="fa-solid fa-forward-step"></i></li>
+                        <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
+                    </ul>
+                </div>  
+            </div>          
+                <div class="d-flex a-center">
+                    <span class="j-center margin-center"><strong>0.25</strong></span>
+                    <form action="/action_page.php">
+                        <label for="vol"></label>
+                        <input class="music-center a-center" type="range" id="vol" name="vol" min="" max="100">
+                    </form>
+                    <span class="j-center margin-center"><strong>4.25</strong></span>
                 </div>
-                <div class="conteiner-right">
 
+            </div>
+            <div class="container-right d-flex a-center">
+                <div>
+                    <ul class="d-flex icon-right">
+                        <li><i class="fa-solid fa-bars"></i></li>
+                        <li><i class="fa-solid fa-desktop"></i></li>
+                        <li><i class="fa-solid fa-volume-high"></i></li>
+                        <li><div class="d-flex ">
+                            <form action="/action_page.php">
+                                <label for="vol"></label>
+                                <input class="music-right" type="range" id="vol" name="vol" min="0" max="100">
+                            </form>
+                        </div></li>
+                    </ul>
+                    
                 </div>
-            
+
+            </div>
+
         </footer>
 
     </div>

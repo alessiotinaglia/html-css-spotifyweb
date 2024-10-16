@@ -17,7 +17,7 @@
 }
 
 .debug{
-    border: 1px solid rgb(233, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 body{
@@ -346,6 +346,12 @@ hr{
 
 /* utiliti margin */
 
+.margin-center{
+    padding: 10px 30px;
+    margin: 0px 0px 8px;
+}
+
+
 .margin-20{
     margin: 20px;
 }
@@ -371,12 +377,18 @@ hr{
     justify-content: center;
 }
 
+.j-content{
+    justify-content: space-between;
+}
+
 .f-wrap{
     flex-wrap: wrap;
 }
 .f-start{
     align-items: start;
 }
+
+
 h4{
     margin: 0;
 }
@@ -388,8 +400,24 @@ h4{
 /* playbar */
 
 footer{
-    background-color: var(--color-darkgrey);
+    display: flex;
+    align-items: center;
+    width: 100%; 
     flex: 0 0 100px;
+    background-color: var(--color-darkgrey);
+    justify-content: space-between;    
+}
+
+/* container-left */
+
+.container-left{
+    /* width: 300px;  */
+    background-color: var(--color-darkgrey); 
+}
+
+.font-small{
+    font-size: 0.8em;
+    color: var(--color-lightgrey);
 }
 
 .conteiner-left img{
@@ -398,17 +426,8 @@ footer{
     display: block;
 }
 
-.font-small{
-    font-size: 0.8em;
-    color: var(--color-lightgrey);
-}
-
-
-
 .container-left{
-    padding: 11px 11px;
-    width: 300px;
-
+    padding: 0px 11px;
 }
 
 .img-footer{
@@ -424,13 +443,52 @@ footer{
     margin: 0px 10px;
 }
 
+/* container-center */
+
+.container-center {
+    display: flex;
+    flex-grow: 1; 
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-darkgrey); 
+}
+
+.icon-center {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.icon-center i{
+    padding: 0px 10px;
+}
+
+.play{
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.music-center{
+    width: 250px;
+}
 
 
+/* container-right */
 
+.container-right{
+    width: 300px; 
+    background-color: var(--color-darkgrey);
+    display: flex;
+    
+}
 
+.icon-right{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+}
 
-.conteiner-right{
-    width: 300px;
+.icon-right li{
+    padding: 10px;
 }
 
 /* media query */
@@ -446,6 +504,18 @@ footer{
     .column {
         width: calc(100% / 3); 
     }
+    .container-left{
+        display: none;
+    }
+    .container-right{
+        display: none;
+    }
+    .container-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
    
 } 
 
