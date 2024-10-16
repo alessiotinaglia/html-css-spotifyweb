@@ -37,6 +37,7 @@ body{
     overflow-y: auto;
 }
 
+
 /* main */
 
 main{
@@ -44,7 +45,6 @@ main{
     overflow-y: auto;    
     overflow-x: hidden;
 }
-
 .sticky{
     height: 70px;
     position: sticky;
@@ -65,39 +65,90 @@ main{
     color: var(--color-light);
     padding: 10px 35px;
     border-radius: 20px; 
-    cursor: pointer;   
+    cursor: pointer; 
+    margin-right: 20px;
+}
+
+.button-sticky a{
+    text-decoration: none;
+    color: var(--color-light);
 }
 
 .button-sticky:hover{
-    transform: scale(1.05); 
+    transform: scale(1.2); 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* siddebar nav */
+
+.main-nav li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.main-nav li img{
+    height: 30px;
+    object-fit: cover;
+    padding-right: 5px;    
+    padding-left: 15px;
+}
+
+#border-green{
+    border-left: 3px solid var(--color-highlight);
+}
+
+#sidebar li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-light);
 }
 
 .nav-bar ul{
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; 
 }
-
-.nav-bar a{
-    text-decoration: none;
-    color: var(--color-lightgrey);
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
 .nav-bar ul li{
     padding: 15px 15px;
     cursor: pointer;
 }
-.nav-lbar li:hover a{
+.nav-bar a{
+    text-transform: uppercase;
+    padding: 6px 10px;
+    display: block;
+    font-size: 0.9em;
+    position: relative; 
+    text-decoration: none;
+    color: var(--color-lightgrey);
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+.nav-bar a::after {
+    content: '';
+    display: block;
+    width: 0; 
+    margin: 0 auto;
+    height: 3px;
+    background-color: var(--color-highlight);
+    transition: width 0.3s ease; 
+}
+.nav-bar a:hover {
     color: var(--color-light); 
     transform: scale(1.1); 
 }
+.nav-bar a:hover::after {
+    width: 50%; 
+}
+
+.nav-bar a.active::after {
+    width: 50%;
+    color: var(--color-light);
+    margin-top: 3px; 
+}
 
 h2{
-    padding: 15px 15px;
+    padding: 15px 6px;
     font-size: 1.5em;
 }
 .container{
@@ -121,13 +172,12 @@ img{
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    
 }
 
 p{
     color: var(--color-lightgrey);
     font-size: 0.8em;
-    padding: 0px 15px 10px;
+    padding: 0px 6px 10px;
 }
 
 .car-img{
@@ -137,8 +187,8 @@ p{
     overflow: hidden;
 }
 .hover-icon {
-    position: absolute; 
-    top: 50%; 
+    position: absolute;  
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0);
@@ -158,23 +208,50 @@ p{
     opacity: 1; 
 }
 
+
 /* sidebar */
 
 #sidebar{
     flex: 0 0 230px;
+    flex-shrink: 0;
     background-color: var(--color-black);
+    /* min-height: 400px;
+    overflow: hidden; */
 }
+
+.sidebar-top{
+    height: calc(100% - 90px);
+       
+}
+
+.sidebar-bottom{
+    height: 90px;   
+
+/* background: var(--color-darkgrey); */
+
+}
+
+#logo img{
+    width: 70%;
+    object-fit: cover;
+    display: block;
+    margin: 15px 0px;
+    padding-left: 15px;
+}
+
 /* utility padding */
+
+.p-10{
+    padding: 10px;
+}
 
 .p-20{
     padding: 20px;
 }
 
 .p-15{
-    padding: 15px;
+    padding: 5px;
 }
-
-
 
 /* utility flex */
 
@@ -190,8 +267,19 @@ p{
     align-items: center;
 }
 
-.j-content{
+.j-center{
     justify-content: center;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+h4{
+    margin: 0;
+}
+
+.m-auto{
+    margin: 0 auto;
 }
 
 /* playbar */
@@ -208,6 +296,13 @@ footer{
         width: calc(100% / 4); 
     }
     
+} 
+
+@media screen and (max-width: 992px) {
+    .column {
+        width: calc(100% / 3); 
+    }
+   
 } 
 
 @media screen and (max-width: 768px) {
