@@ -17,7 +17,7 @@
 }
 
 .debug{
-    border: 1px solid rgb(7, 7, 7);
+    border: 1px solid rgb(233, 0, 0);
 }
 
 body{
@@ -101,11 +101,17 @@ main{
     min-height: 0px;
 }
 
+.playlist-nav span{
+    color: var(--color-lightgrey);
+}
+
+
 .playlist-nav ul{
     flex: 1 1 auto;
     overflow-y: auto;
     overflow-x: hidden;
 }
+
 
 .playlist-nav{
     padding: 10px 15px;    
@@ -119,6 +125,8 @@ h3{
     margin-bottom: 10px;
 }
 
+
+
 #border-green{
     border-left: 3px solid var(--color-highlight);
 }
@@ -126,7 +134,8 @@ h3{
 #sidebar li a{
     text-decoration: none;
     cursor: pointer;
-    color: var(--color-light);
+    color: var(--color-lightgrey);
+
 }
 
 .nav-bar ul{
@@ -236,10 +245,10 @@ p{
 /* sidebar */
 
 #sidebar{
-    flex: 0 0 230px;
+    flex: 0 0 240px;
     flex-shrink: 0;
     background-color: var(--color-black);
-    min-height: 400px;
+    min-height: 350px;
     overflow: hidden;
 }
 
@@ -283,9 +292,8 @@ p{
 .circle-arrow {
     width: 15px; 
     height: 15px; 
-    border: 2px solid var(--color-light); 
+    border: 2px solid var(--color-lightgrey); 
     border-radius: 50%; 
-    color: var(--color-light);
     cursor: pointer;
 }
 .circle-arrow i {
@@ -294,6 +302,7 @@ p{
     align-items: center;
     margin: 0 auto; 
     font-size: 0.3em;
+    color: var(--color-lightgrey);
 }
 
 .user{
@@ -310,9 +319,9 @@ p{
 
 .sidebar-bottom span{
     text-decoration: none;
-    color: var(--color-light);
     padding-left: 10px;
-    cursor: pointer;   
+    cursor: pointer;
+    color: var(--color-lightgrey);   
 }
 
 
@@ -334,6 +343,15 @@ hr{
 .p-15{
     padding: 5px;
 }
+
+/* utiliti margin */
+
+.margin-20{
+    margin: 20px;
+}
+
+
+
 
 /* utility flex */
 
@@ -372,6 +390,47 @@ h4{
 footer{
     background-color: var(--color-darkgrey);
     flex: 0 0 100px;
+}
+
+.conteiner-left img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.font-small{
+    font-size: 0.8em;
+    color: var(--color-lightgrey);
+}
+
+
+
+.container-left{
+    padding: 11px 11px;
+    width: 300px;
+
+}
+
+.img-footer{
+    height: 50px;
+    width: 50px;
+}
+
+.icon-sisters{
+    color: var(--color-lightgrey);
+}
+
+.icon-sisters i{
+    margin: 0px 10px;
+}
+
+
+
+
+
+
+.conteiner-right{
+    width: 300px;
 }
 
 /* media query */
