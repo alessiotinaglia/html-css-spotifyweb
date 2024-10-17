@@ -22,6 +22,7 @@
                 <div class="sidebar-top debug">
                     <div id="logo">
                         <img src="./img/logo.svg" alt="Logo Spotify">
+                        <!-- <img src="./img/logo-small.svg" alt="Logo Spotify small"> -->
                     </div>
                     <nav class="main-nav">
                         <ul>
@@ -100,7 +101,7 @@
                         <li><a href="#"><strong>SCOPRI</strong></a></li>
                     </ul>
                 </nav>
-                <section class="p-10">
+                <section class="p-20">
                     <h2>Recently played</h2>
                     <div class="d-flex columns">
                         <div class="column p-15">
@@ -190,7 +191,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="p-10">
+                <section class="p-20">
                     <section>
                         <div>
                             <h2>Creato per John Doe</h2>
@@ -218,7 +219,7 @@
                                 </div>
                             </div>
                     </section>
-                    <section class="p-10">
+                    <section class="p-20">
                         <div>
                             <h2>Artisti più popolari</h2>
                             <p>Più ascolti, più accurati saranno i suggerimenti.</p>
@@ -246,58 +247,62 @@
         </div>
         </section>
         </main>
-        <footer class="debug">
-            <div class="d-flex container-left a-center j-content">
-                <div class="d-flex">
-                    <div class="img-footer"><img src="./img/sinister.jpeg" alt="sinister footer"></div>
+        <footer>
+            <div id="playbar" class="d-flex a-center j-between debug">
+                <div class="container-left d-flex a-center debug">
+                    <div class="d-flex">
+                        <div class="img-footer"><img src="./img/sinister.jpeg" alt="sinister footer"></div>
+                    </div>
+                    <div class="d-flex f-column">
+                        <span><strong>Sinister</strong></span>
+                        <span id="d-flex" class="font-small">Brano Nome</span>
+                    </div>
+                    <div class="d-flex icon-sisters">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
                 </div>
-                <div class="d-flex f-column margin-20">
-                    <span><strong>Sinister</strong></span>
-                    <span id="d-flex" class="font-small">Brano Nome</span>
-                </div>
-                <div class="icon-sisters">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
-                </div>
-            </div>
-            <div>
-            <div class="conteiner-center">
-                <div>
-                    <ul class="d-flex icon-center a-center j-center">
-                        <li><i class="fa-solid fa-shuffle"></i></li>
-                        <li><i class="fa-solid fa-backward-step"></i></li>
-                        <li class="play"><i class="fa-regular fa-circle-play"></i></li>
-                        <li><i class="fa-solid fa-forward-step"></i></li>
-                        <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
-                    </ul>
-                </div>  
-            </div>          
-                <div class="d-flex a-center">
-                    <span class="j-center margin-center"><strong>0.25</strong></span>
-                    <form action="/action_page.php">
-                        <label for="vol"></label>
-                        <input class="music-center a-center" type="range" id="vol" name="vol" min="" max="100">
-                    </form>
-                    <span class="j-center margin-center"><strong>4.25</strong></span>
-                </div>
-
-            </div>
-            <div class="container-right d-flex a-center">
-                <div>
-                    <ul class="d-flex icon-right">
-                        <li><i class="fa-solid fa-bars"></i></li>
-                        <li><i class="fa-solid fa-desktop"></i></li>
-                        <li><i class="fa-solid fa-volume-high"></i></li>
-                        <li><div class="d-flex ">
+                <div class="container-center debug j-center">
+                    <div class="icon-center debug">
+                        <div>
+                            <ul class="d-flex icon-center a-center j-center p-bottom">
+                                <li><i class="fa-solid fa-shuffle"></i></li>
+                                <li><i class="fa-solid fa-backward-step"></i></li>
+                                <li><i class="fa-regular fa-circle-play"></i></li>
+                                <li><i class="fa-solid fa-forward-step"></i></li>
+                                <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex music-center a-center j-center debug j-between margin-bottom-10">
+                        <div><strong>0:25</strong></div>
+                        <div class="debug music-bar">
                             <form action="/action_page.php">
                                 <label for="vol"></label>
-                                <input class="music-right" type="range" id="vol" name="vol" min="0" max="100">
+                                <input class="controller-bar a-center debug" type="range" id="vol" name="vol" min="0"max="100">                                    
                             </form>
-                        </div></li>
-                    </ul>
-                    
+                        </div>
+                        <div><strong>4:35</strong></div>
+                    </div>
                 </div>
+                <div class="container-right d-flex debug">
+                    <div>
+                        <ul class="d-flex icon-right">
+                            <li><i class="fa-solid fa-bars"></i></li>
+                            <li><i class="fa-solid fa-desktop"></i></li>
+                            <li><i class="fa-solid fa-volume-high"></i></li>
+                            <li>
+                                <div class="d-flex">
+                                    <form action="/action_page.php">
+                                        <label for="vol"></label>
+                                        <input class="music-right" type="range" id="vol" name="vol" min="0" max="100">
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
 
+                    </div>
+                </div>
             </div>
 
         </footer>
