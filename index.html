@@ -20,52 +20,52 @@
         <div class="upper-conten d-flex">
             <div id="sidebar">
                 <div class="sidebar-top debug">
-                    <div id="logo">
-                        <img src="./img/logo.svg" alt="Logo Spotify">
-                        <!-- <img src="./img/logo-small.svg" alt="Logo Spotify small"> -->
+                    <div class="logo">
+                        <img id="logo-big" src="./img/logo.svg" alt="Logo Spotify">
+                        <img id="logo-small" src="/img/logo-small.svg" alt="Logo Spotify small">
                     </div>
                     <nav class="main-nav">
                         <ul>
                             <li>
                                 <div id="border-green"><img src="./img/home.svg" alt="icon home"></div>
-                                <span><a href="#">Home</span></a>
+                                <span class="no-span"><a href="#">Home</span></a>
                             </li>
-                            <li>
+                            <li class="border-edge">
                                 <div><img src="./img/search.svg" alt="search"></div>
-                                <span><a href="#">Cerca</span></a>
+                                <span class="no-span"><a href="#">Cerca</span></a>
                             </li>
-                            <li>
+                            <li class="border-edge">
                                 <div><img src="./img/libreria.svg" alt="bookshelf"></div>
-                                <span><a href="#">La tua libreria</span></a>
+                                <span class="no-span"><a href="#">La tua libreria</span></a>
                             </li>
                         </ul>
                     </nav>
                     <div class="playlist-nav d-flex f-column">
-                        <h3>PLAYLIST</h3>
+                        <h3 class="no-span">PLAYLIST</h3>
                         <div class="d-flex a-center">
-                            <div class="square">
+                            <div class="square d-flex a-center j-center no-span">
                                 <i class="fa-solid fa-plus"></i>
                             </div>
-                            <span>Crea Playlist</span>
+                            <span class="no-span">Crea Playlist</span>
                         </div>
                         <ul class="list-playlist">
                             <li>
-                                <span><a href="#">Name Playlist</span></a></span>
+                                <span class="no-span"><a href="#">Name Playlist</span></a></span>
                             </li>
                             <li>
-                                <span><a href="#">Name Playlist</span></a></span>
+                                <span class="no-span"><a href="#">Name Playlist</span></a></span>
                             </li>
                             <li>
-                                <span><a href="#">Name Playlist</span></a></span>
+                                <span class="no-span"><a href="#">Name Playlist</span></a></span>
                             </li>
                             <li>
-                                <span><a href="#">Name Playlist</span></a></span>
+                                <span class="no-span"><a href="#">Name Playlist</span></a></span>
                             </li>
                             <li>
-                                <span><a href="#">Name Playlist</span></a></span>
+                                <span class="no-span"><a href="#">Name Playlist</span></a></span>
                             </li>
                             <li>
-                                <span><a href="#">Name Playlist</span></a></span>
+                                <span class="no-span"><a href="#">Name Playlist</span></a></span>
                             </li>
                         </ul>
                     </div>
@@ -75,12 +75,12 @@
                         <div class="d-flex circle-arrow">
                             <i class="fa-solid fa-arrow-down"></i>
                         </div>
-                        <span>Installa app</span>
+                        <span class="no-span">Installa app</span>
                     </div>
                     <hr>
                     <div class="d-flex user">
                         <i class="fa-regular fa-user"></i>
-                        <span><strong>John Doe</strong></span>
+                        <span class="no-span"><strong>John Doe</strong></span>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@
                                 <i class="fa-regular fa-circle-play hover-icon"></i>
                             </div>
                             <div class="text-card">
-                                <div class="d-flex a-center j-content">
+                                <div class="d-flex a-center j-content t-align">
                                     <h4 class="p-20 m-auto">Stranger Things, Vol. 1 (a Netflix
                                         Original Series Soundtrack)</h4>
                                 </div>
@@ -197,7 +197,7 @@
                             <h2>Creato per John Doe</h2>
                             <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                         </div>
-                        <div class="d-flex">
+                        <div class="d-flex columns">
                             <div class="column p-15">
                                 <div class="car-img d-flex">
                                     <img src="./img/radar.jpeg" alt="radar">
@@ -224,7 +224,7 @@
                             <h2>Artisti più popolari</h2>
                             <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                         </div>
-                        <div class="d-flex">
+                        <div class="d-flex columns">
                             <div class="column p-15">
                                 <div class="car-img d-flex j-content a-center">
                                     <img id="img-circle" src="./img/youg.jpeg" alt="youg">
@@ -247,9 +247,10 @@
         </div>
         </section>
         </main>
+        
         <footer>
-            <div id="playbar" class="d-flex a-center j-between debug">
-                <div class="container-left d-flex a-center debug">
+            <section id="playbar" class="d-flex a-center j-between">
+                <div class="container-left d-flex a-center">
                     <div class="d-flex">
                         <div class="img-footer"><img src="./img/sinister.jpeg" alt="sinister footer"></div>
                     </div>
@@ -262,8 +263,8 @@
                         <i class="fa-regular fa-folder"></i>
                     </div>
                 </div>
-                <div class="container-center debug j-center">
-                    <div class="icon-center debug">
+                <div class="container-center j-center">
+                    <div>
                         <div>
                             <ul class="d-flex icon-center a-center j-center p-bottom">
                                 <li><i class="fa-solid fa-shuffle"></i></li>
@@ -274,18 +275,19 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="d-flex music-center a-center j-center debug j-between margin-bottom-10">
-                        <div><strong>0:25</strong></div>
-                        <div class="debug music-bar">
+                    <div class="d-flex music-center a-center j-center j-between margin-bottom-10">
+                        <div class="p-10"><strong>0:25</strong></div>
+                        <div class="music-bar">
                             <form action="/action_page.php">
                                 <label for="vol"></label>
-                                <input class="controller-bar a-center debug" type="range" id="vol" name="vol" min="0"max="100">                                    
+                                <input class="controller-bar a-center" type="range" value="30" id="vol" name="vol"
+                                    min="0" max="100">
                             </form>
                         </div>
-                        <div><strong>4:35</strong></div>
+                        <div class="p-10"><strong>4:35</strong></div>
                     </div>
                 </div>
-                <div class="container-right d-flex debug">
+                <div class="container-right d-flex">
                     <div>
                         <ul class="d-flex icon-right">
                             <li><i class="fa-solid fa-bars"></i></li>
@@ -303,7 +305,7 @@
 
                     </div>
                 </div>
-            </div>
+            </section>
 
         </footer>
 
