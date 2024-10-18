@@ -112,22 +112,19 @@ main{
 
 /* plylist nav */
 
-.playlist-nav {
+.list-playlist {
     flex: 1 1 auto;
     min-height: 0px;
 }
 
-.playlist-nav span{
-    color: var(--color-lightgrey);
-}
-
-
-.playlist-nav ul{
+.list-playlist ul{
     flex: 1 1 auto;
     overflow-y: auto;
-    overflow-x: hidden;
 }
 
+.playlist-nav{
+    color: var(--color-lightgrey);
+}
 
 .playlist-nav{
     padding: 10px 15px;    
@@ -144,18 +141,15 @@ h3{
 
 .list-playlist li{
     margin-left: 5px;
+    text-decoration: none;
 }
 
 #border-green{
     border-left: 3px solid var(--color-highlight);
 }
 
-#sidebar li a{
-    text-decoration: none;
-    cursor: pointer;
-    color: var(--color-lightgrey);
 
-}
+
 
 
 .nav-bar ul{
@@ -276,6 +270,13 @@ p{
     height: calc(100% - 90px);
 }
 
+#sidebar li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-lightgrey);
+
+}
+
 #logo-small{
     display: none;
 }
@@ -297,8 +298,6 @@ p{
 }
 
 
-
-
 .square {
     width: 40px; 
     height: 40px; 
@@ -316,10 +315,6 @@ p{
     font-size: 1.5em; 
 }
 
-/* .square:hover i {
-    transform: scale(1.5);
-    transition: trasform 0.3 ease;
-} */
 .square:hover{
     transform: scale(1.2);
     transition: trasform 0.3 ease;
@@ -435,6 +430,7 @@ hr{
 
 h4{
     margin: 0;
+    text-align: center;
 }
 
 .m-auto{
@@ -531,7 +527,7 @@ footer{
 .icon-center i{
     width: 100%;
     padding: 0px 10px;
-    font-size: 1em;
+    font-size: 1.3em;
     cursor: pointer;
     margin-top: 10px;
     transition: transform 0.3s ease;
